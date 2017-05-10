@@ -108,10 +108,12 @@
 					<h2>GET IN TOUCH</h2>
 					<p></p>
 				</header>
-				<form method="post" action="#">
+				<form method="post" action="//formspree.io/honestaguanta@gmail.com" id="formaction">
 					<div class="row 50%">
-						<div class="6u 12u$(mobile)"><input type="text" class="text" name="name" placeholder="Name" /></div>
-						<div class="6u$ 12u$(mobile)"><input type="text" class="text" name="email" placeholder="Email" /></div>
+						<div class="6u 12u$(mobile)">
+							<input type="text" class="text" name="name" placeholder="Name" /></div>
+						<div class="6u$ 12u$(mobile)">
+							<input type="text" class="text" name="email" placeholder="Email" /></div>
 						<div class="12u$">
 							<textarea name="message" placeholder="Message"></textarea>
 						</div>
@@ -121,7 +123,12 @@
 							</ul>
 						</div>
 					</div>
+					<input type="text" name="_gotcha" style="display:none" />
 				</form>
+				<script>
+	    				var contactform =  document.getElementById('formaction');
+    					contactform.setAttribute('action', '//formspree.io/' + 'your' + '@' + 'email' + '.' + 'com');
+				</script>
 			</article>
 
 		<!-- Generic -->
